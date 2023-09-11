@@ -11,6 +11,7 @@ class ReadFile:
                 if caracter == ' ':
                     Text_out.write('\n')
                 elif caracter == character:
+                    Text_out.write('\n')
                     Text_out.write(character)
                     Text_out.write('\n')    
                         
