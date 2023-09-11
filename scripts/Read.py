@@ -6,13 +6,13 @@ class ReadFile:
 
     def check_text(self):
         with open('Files/File_out.txt', 'w') as Text_out:
-            character = input('Enter character: ')
+            character = input('Enter characters separated by spaces: ').split()
             for caracter in self.text:
                 if caracter == ' ':
                     Text_out.write('\n')
-                elif caracter == character:
+                elif caracter in character:
                     Text_out.write('\n')
-                    Text_out.write(character)
+                    Text_out.write(caracter)
                     Text_out.write('\n')    
                         
                 else:
